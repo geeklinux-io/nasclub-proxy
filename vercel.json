@@ -7,7 +7,7 @@
   ],
   "headers": [
     {
-      "source": "/*",
+      "source": "/(.*)",
       "headers": [
         { "key": "Host", "value": "nasclub.cc" },
         { "key": "x-envoy-upstream-service-time", "value": "{time}" },
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "source": "/*",
+      "source": "/(.*)",
       "headers": [
         { "key": "Host", "value": "www.nasclub.cc" },
         { "key": "x-envoy-upstream-service-time", "value": "{time}" },
