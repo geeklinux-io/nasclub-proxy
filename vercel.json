@@ -1,0 +1,26 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "http://128.14.227.40/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/*",
+      "headers": [
+        { "key": "Host", "value": "nasclub.cc" },
+        { "key": "x-envoy-upstream-service-time", "value": "{time}" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    },
+    {
+      "source": "/*",
+      "headers": [
+        { "key": "Host", "value": "www.nasclub.cc" },
+        { "key": "x-envoy-upstream-service-time", "value": "{time}" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
+  ]
+}
